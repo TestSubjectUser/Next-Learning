@@ -1,4 +1,5 @@
 Feb 5th - 14:05 - NextJs 14
+https://github.com/mschwarzmueller/nextjs-complete-guide-course-resources
 
 a fullstack react framework
 
@@ -31,3 +32,6 @@ we can place components folder out of app directory or add \_ as prefix to ignor
 Dynamic routes with squARE BRACKETS AND PASSING identifier in it.
 
 named route/folder have precedense over dynamic names.
+imported png as stored as onject so have to access it's src proprty which contains path, but next's Image does'nt require it
+
+https://nextjs.org/docs/app/getting-started/css
