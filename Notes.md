@@ -35,3 +35,38 @@ named route/folder have precedense over dynamic names.
 imported png as stored as onject so have to access it's src proprty which contains path, but next's Image does'nt require it
 
 https://nextjs.org/docs/app/getting-started/css
+
+in react we're using client components out of the box
+
+in next by default they are react server component,
+
+- Using client components Efficiently.
+  usePathName hook gives currently active path.
+
+add 'use client' far down to component tree as possible.
+we can create a smaller component that uses client side rendering.
+
+Images with unknown Dimentions
+fill prop to fill th available space
+
+setup basic DataBase:
+npm install better-sqlite3
+this package will allow us to work with sqlite database
+which can be used locally without setting up any extra DB
+
+initdb will create existing Db if exists otherwise creates new, and contains dummy data.
+than run node initdb.js
+and we gets sqlite db
+
+Fetching data by Leveraging NextJS & Fullstack capabilities.
+
+we don't need to use useEffect and fetch, we can directly reach out to database.
+and write that in lib dir.
+
+.run() is used to insert/change data
+.all() is used to fetch data, all rows
+and .get() for single row
+
+because of async wrapped to func it will return promise, and we can also use async in react components as well now in next
+
+- Adding a loading page
