@@ -69,4 +69,20 @@ and .get() for single row
 
 because of async wrapped to func it will return promise, and we can also use async in react components as well now in next
 
+next js performs aggressive cashing under the hood, to be presice it cashes any page that we visit including data of that page.
+also, it cashes even more aggressively when running the website in production mode.
+
 - Adding a loading page
+- after clicking to meals only after 5sec i'm redirected to that page, so
+- add loading.js file (it applies to all sibling + nested pages and layouts)
+- loading.js is shown as fallback untill data is there.
+
+Using Suspense & Streamed responses for granular Loading State mngmnt.
+
+- using React's suspense to load certain data, and showing fallback
+
+Handling Errors:
+error.js file - must be a client component
+
+for invalid path
+not-found.js
