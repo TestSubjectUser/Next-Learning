@@ -86,3 +86,13 @@ error.js file - must be a client component
 
 for invalid path
 not-found.js
+
+The dangerouslySetInnerHTML property in a React application is the equivalent of the innerHTML attribute in the browser DOM. In vanilla JavasScript, innerHTML is a property of DOM elements that allows you to get or set the HTML content inside an element. It’s a part of the standard DOM API, not specific to React.
+
+dangerouslySetInnerHTML is React’s replacement for using innerHTML. dangerouslySetInnerHTML is a property that you can use on HTML elements in a React application to programmatically set their content. Instead of using a selector to grab the HTML element and then setting its innerHTML, you can use this property directly on the element.
+
+When dangerouslySetInnerHTML is used, React also knows that the contents of that specific element are dynamic, and, for the children of that node, it simply skips the comparison against the virtual DOM to gain some extra performance.
+
+As the name of the property suggests, it can be dangerous to use dangerouslySetInnerHTML because it makes your code vulnerable to cross-site scripting (XSS) attacks. This can become an especially big issue if you are fetching data from a third-party source or rendering content submitted by users.
+
+special func - notFound() - shows closest not-found/error page.
